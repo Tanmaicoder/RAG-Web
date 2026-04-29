@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_core.messages import SystemMessage, HumanMessage
 from db_utils import get_retriever
 import json
